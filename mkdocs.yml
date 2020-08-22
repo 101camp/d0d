@@ -27,8 +27,8 @@ copyright: ©101camp 2018-2020
 #  favicon: /img/101camp_bauhaus_v4h420.ico
 #  custom_dir: _theme/mkdocs
 theme: 
-  name: 'cerulean'
-  custom_dir: '_theme/bootswatch/cerulean'
+  name: 'simplex'
+  custom_dir: '_theme/bootswatch/simplex'
   font: false
   logo: http://101.zoomquiet.top/res/icon/101camp_bauhaus_v3h32.png
   favicon: /img/101camp_bauhaus_v4h420.ico
