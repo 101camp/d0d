@@ -7,25 +7,6 @@ repo_name: github
 copyright: ©101camp 2018-2020 
 
 
-#theme:
-#  font: false
-#  logo: http://101.zoomquiet.top/res/icon/101camp_bauhaus_v3h32.png
-#  favicon: /img/101camp_bauhaus_v4h420.ico
-#  name: 'windmill-dark'
-#  custom_dir: '_theme/material'
-#theme:
-#    name: null
-#    font: false
-#    logo: http://101.zoomquiet.top/res/icon/101camp_bauhaus_v3h32.png
-#    favicon: /img/101camp_bauhaus_v4h420.ico
-#    custom_dir: '_theme/mkdocs_windmill_dark'
-#theme:
-#  name: mkdocs
-#  navigation_depth: 2
-#  font: false
-#  logo: http://101.zoomquiet.top/res/icon/101camp_bauhaus_v3h32.png
-#  favicon: /img/101camp_bauhaus_v4h420.ico
-#  custom_dir: _theme/mkdocs
 theme: 
   name: 'simplex'
   custom_dir: '_theme/bootswatch/simplex'
@@ -49,19 +30,19 @@ plugins: []
 nav:
     - Home: index.md
     - FAQ: faq.md
-    - '故事': 
+    - '故事': story/index.md
       - '预备': story/0_prepare.md
       - '起念': story/1_init.md
       - '进入': story/2_enter.md
       - '行进': story/3_running.md
       - '不结束': story/4_restart.md
-    - '有关': 
+    - '有关': about/index.md
       - '命名': about/name.md
       - '关于': about/readme.md
       #- '商标': about/brand.md
       - '资源': about/resource.md
       - '许可': about/license.md
-    - '运营': 
+    - '运营': scm/index.md
       - '部署': scm/deploy.md
 
 
