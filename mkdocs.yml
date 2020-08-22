@@ -31,19 +31,19 @@ nav:
     - Home: index.md
     - FAQ: faq.md
     - '故事': story/index.md
-      - '预备': story/0_prepare.md
-      - '起念': story/1_init.md
-      - '进入': story/2_enter.md
-      - '行进': story/3_running.md
-      - '不结束': story/4_restart.md
+    #  - '预备': story/0_prepare.md
+    #  - '起念': story/1_init.md
+    #  - '进入': story/2_enter.md
+    #  - '行进': story/3_running.md
+    #  - '不结束': story/4_restart.md
     - '有关': about/index.md
-      - '命名': about/name.md
-      - '关于': about/readme.md
-      #- '商标': about/brand.md
-      - '资源': about/resource.md
-      - '许可': about/license.md
+    #  - '命名': about/name.md
+    #  - '关于': about/readme.md
+    #  #- '商标': about/brand.md
+    #  - '资源': about/resource.md
+    #  - '许可': about/license.md
     - '运营': scm/index.md
-      - '部署': scm/deploy.md
+    #  - '部署': scm/deploy.md
 
 
 
