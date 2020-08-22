@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="蟒营®系列 Pythonic 实训课程经验总结">
+        <meta name="author" content="guru101camp@googlegroups.com">
+        <link rel="canonical" href="https://d0d.101.camp/">
+        <link rel="shortcut icon" href="img/101camp_bauhaus_v4h420.ico">
+        <title>无门之门/蟒营®图书</title>
+        <link href="css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/color-brewer.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="js/jquery-1.10.2.min.js" defer></script>
+        <script src="js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+
+<!-- tongji.baidu.com/sc-web/ -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?9a3a82b0caff28b6c6e8d2d2ba5ff11f";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script> 
+    </head>
+
+    <body class="homepage">
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href=".">
+
+                    <img src='/img/101camp_bauhaus_v3h16.png'/>
+                    无门之门/蟒营®图书
+
+                    </a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="active">
+                                <a href=".">Home</a>
+                            </li>
+                            <li >
+                                <a href="faq/">FAQ</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">故事 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="story/0_prepare/" class="dropdown-item">预备</a>
+</li>
+                                    
+<li>
+    <a href="story/1_init/" class="dropdown-item">起念</a>
+</li>
+                                    
+<li>
+    <a href="story/2_enter/" class="dropdown-item">进入</a>
+</li>
+                                    
+<li>
+    <a href="story/3_running/" class="dropdown-item">行进</a>
+</li>
+                                    
+<li>
+    <a href="story/4_restart/" class="dropdown-item">不结束</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">有关 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="about/name/" class="dropdown-item">命名</a>
+</li>
+                                    
+<li>
+    <a href="about/readme/" class="dropdown-item">关于</a>
+</li>
+                                    
+<li>
+    <a href="about/resource/" class="dropdown-item">资源</a>
+</li>
+                                    
+<li>
+    <a href="about/license/" class="dropdown-item">许可</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">运营 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="scm/deploy/" class="dropdown-item">部署</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+<!--
+
+-->
+                            <li class="disabled">
+                                <a rel="next" >
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="faq/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/101camp/d0d/edit/master/docs/index.md">Edit on github</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#_1" class="nav-link">无门之门</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#logging" class="nav-link">logging</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                <div class="col-md-9" role="main">
+
+                
+
+<h1 id="_1">无门之门</h1>
+<blockquote>
+<p>~ Python编程学习心得</p>
+</blockquote>
+<ul>
+<li>英文: Door without door<ul>
+<li>Jump into Pythonic with Self-Teching </li>
+</ul>
+</li>
+<li>编号: <code>d0d.py</code></li>
+</ul>
+<h2 id="logging">logging</h2>
+<ul>
+<li>200822 ZQ init. offical site</li>
+<li>200821 ZQ example finished</li>
+<li>200701 ZQ re-factory examples</li>
+<li>200601 ZQ init. PaaS</li>
+<li>200501 ZQ init. outlines</li>
+<li>200401 ZQ init. examples</li>
+<li>200317 ZQ init. repo.</li>
+<li>200316 ZQ 选题会, 决议</li>
+<li>200311 ZQ Lark 通气会</li>
+<li>200309 ZQ 推动首批老司机</li>
+<li>200228 ZQ 和 goa.bo 明确意向</li>
+<li>200227 ZQ Linux.cn 触发</li>
+</ul>
+<pre><code>
+     _  ___      _   _  ___  _
+  __| |/ _ \  __| | / |/ _ \/ |  ___ __ _ _ __ ___  _ __
+ / _` | | | |/ _` | | | | | | | / __/ _` | '_ ` _ \| '_ \
+| (_| | |_| | (_| |_| | |_| | || (_| (_| | | | | | | |_) |
+ \__,_|\___/ \__,_(_)_|\___/|_(_)___\__,_|_| |_| |_| .__/
+                                                   |_|
+
+</code></pre>
+                <hr/>
+                <script src="https://utteranc.es/client.js"
+        repo="101camp/d0d"
+        issue-term="url"
+        label="✨💬✨ "
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+                <hr/>
+                <hr/>
+
+<h3>蟒营®编程思维提高班 Python版/<b>第11期</b> 正在报名</h3>
+<h4>精品小班/ 每期<42人</h4>
+
+<blockquote><p>
+    
+<ul>
+    <li>
+    开始报名: <b>2020.7.22</b> </li>
+    <li>
+    报名截止: <b>2020.8.23</b> </li>
+    <li>
+    正式开课: <b>2020.8.30</b> </li>
+    <li>
+    课程结束: <b>2020.10.11</b> </li>
+<!--
+    <li>
+    介绍文章:  
+    <ul>
+        <li>
+        <a href="https://mp.weixin.qq.com/s/FbUYUtnSVPJseA6sBud5fQ">
+            我觉得潘石屹推广编程的姿势不对
+        </a>
+        </li>
+        <li>
+        <a href="https://mp.weixin.qq.com/s/_yMoR4pJJGlJx51DU8xGyg">
+            蟒营®/ 到底如何算"会编程"?
+        </a>
+        </li>
+        <li>
+        <a href="https://mp.weixin.qq.com/s/mSfEbGSgJAODtXC0BgMtDA">
+            蟒营®/ 到底改变了什么?
+        </a>
+        </li>
+    </ul>
+    </li>
+
+-->
+
+</ul>
+
+<b>扫描</b>报名:
+
+<img alt="101camp11py" 
+    src="http://ydlj.zoomquiet.top/ipic/2020-07-21-regQR200721zip.jpg"/>
+
+
+
+</p></blockquote>
+
+
+<h2>蟒营®式 原创课程</h2>
+<p>
+    伴你重享<b>学习</b>乐趣
+</p>
+
+<blockquote>
+<p>
+    官网: <b>
+    <a href="https://py.101.camp/">py.101.camp</a>
+    </b>
+</p>
+<p>
+    <i>
+    Reactivate Joy by Self-teching <b>with You</b>
+    </i>
+</p>
+</blockquote>
+
+
+<br/>
+任何问题可先进入知识星球<b>(免费)</b>咨询:
+<br/>
+<img alt="FAQ" 
+    src="http://ydlj.zoomquiet.top/ipic/2020-02-28-FAQ101camp-qr.jpeg?imageView2/2/w/360"/>
+
+<p>关注公众号, 持续获得相关各种咨询:
+    <br/>
+<img alt="mainium" 
+    src="http://ydlj.zoomquiet.top/ipic/2020-02-15-mainium-qr-barnner.jpg"/>
+</p>
+
+<hr/>
+
+<h4>追问</h4>
+<blockquote>
+<p>
+    任何问题, 随时邮件提问可也:
+<br/>
+    <i>
+    askdama@googlegroups.com
+    </i>
+</p>
+</blockquote>
+
+<hr/>
+
+
+                </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>©101camp 2018-2020</p>
+
+                <p><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png" /></a>
+
+This Site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.</p>
+
+                <p><hr/>
+<a href="https://www.vultr.com/?ref=8333895"><img src="https://www.vultr.com/media/banners/banner_468x60.png" width="468" height="60"></a>
+<hr/>
+</p>
+
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>;-)</p>
+        </footer>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="js/base.js" defer></script>
+
+        <div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
+
+<!--
+MkDocs version : 1.1.2
+Build Date UTC : 2020-08-22 09:51:54.211090+00:00
+-->
