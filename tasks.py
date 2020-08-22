@@ -235,14 +235,14 @@ def pub(c, site):
     _crt = '%s/%s'%(CAMPROOT, CSITES[site]['src'])
     cd(c, _crt)
     print('auto deplo NOW:')
-    return None
+
     #return None
     bu(c)
     #recover(c)
 
     pu(c)
     ccname(c)
-    #sync4media(c)
+    sync4media(c)
     gh(c, site)
     ver(c)
 
